@@ -47,4 +47,4 @@ paper/taslp_submission_ready_v32/main.pdf
 
 ## Citation
 
-Please cite the archived Zenodo release DOI once available. The repository also includes `CITATION.cff` and `.zenodo.json` metadata.
+Please cite the archived Zenodo release DOI. The repository also includes `CITATION.cff` and `.zenodo.json` metadata.
