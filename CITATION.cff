@@ -7,6 +7,7 @@ authors:
     given-names: Bozhong
     orcid: "https://orcid.org/0009-0007-5023-0655"
 repository-code: "https://github.com/bozliu/taslp-streaming-aec-diagnostics-reproducibility"
+doi: "10.5281/zenodo.19949877"
 version: "1.0.1-taslp-submission"
 date-released: "2026-05-01"
 keywords:

@@ -32,6 +32,7 @@ This package does not redistribute raw third-party challenge audio or proprietar
 For IEEE submission metadata, use the Zenodo DOI created from the GitHub release of this repository and the title:
 
 ```text
+DOI: 10.5281/zenodo.19949877
 Reproducibility Package for Metric Divergence and Anti-Gaming Diagnostics for Streaming Acoustic Echo Cancellation
 ```
 
@@ -47,4 +48,4 @@ paper/taslp_submission_ready_v32/main.pdf
 
 ## Citation
 
-Please cite the archived Zenodo release DOI. The repository also includes `CITATION.cff` and `.zenodo.json` metadata.
+Please cite the archived Zenodo release DOI: <https://doi.org/10.5281/zenodo.19949877>. The repository also includes `CITATION.cff` and `.zenodo.json` metadata.
