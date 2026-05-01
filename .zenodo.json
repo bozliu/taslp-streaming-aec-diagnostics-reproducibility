@@ -1,0 +1,30 @@
+{
+  "title": "Reproducibility Package for Metric Divergence and Anti-Gaming Diagnostics for Streaming Acoustic Echo Cancellation",
+  "upload_type": "dataset",
+  "description": "Frozen reproducibility package for the TASLP manuscript Metric Divergence and Anti-Gaming Diagnostics for Streaming Acoustic Echo Cancellation. The package contains the v32 manuscript submission archive, generated tables and figures, returned item-level listening-summary aggregates, selected validation snapshots, and lightweight packaging/validation scripts. It excludes raw third-party challenge audio, generated audio clips, private checkpoints, caches, and credentials.",
+  "creators": [
+    {
+      "name": "Liu, Bozhong",
+      "orcid": "0009-0007-5023-0655"
+    }
+  ],
+  "access_right": "open",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "acoustic echo cancellation",
+    "streaming speech enhancement",
+    "AECMOS",
+    "anti-gaming diagnostics",
+    "speech quality evaluation",
+    "reproducibility"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/bozliu/taslp-streaming-aec-diagnostics-reproducibility",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ],
+  "version": "1.0.0-taslp-submission",
+  "publication_date": "2026-05-01"
+}

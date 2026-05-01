@@ -1,0 +1,15 @@
+[project]
+name = "taslp-streaming-aec-diagnostics-reproducibility"
+version = "1.0.0"
+description = "Frozen reproducibility package for TASLP streaming AEC metric-divergence diagnostics."
+requires-python = ">=3.10"
+dependencies = [
+  "numpy",
+  "matplotlib",
+  "pillow",
+  "PyYAML",
+]
+
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"

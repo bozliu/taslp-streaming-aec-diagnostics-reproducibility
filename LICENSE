@@ -1,0 +1,12 @@
+Creative Commons Attribution 4.0 International Public License
+
+The derived manuscript artifacts, aggregate tables, figures, summaries, and
+metadata in this repository are released under the Creative Commons Attribution
+4.0 International License (CC BY 4.0).
+
+License text: https://creativecommons.org/licenses/by/4.0/legalcode
+
+Attribution should cite the archived DOI for this release.
+
+Code files in `scripts/` and `src/` may also be used under the MIT-compatible
+terms in `LICENSE-CODE-MIT.md`.

@@ -1,0 +1,20 @@
+\begin{table}[t]
+\caption{SC-AEC-Echo training recipe. The row is reported as a fixed artifact recipe rather than as a multi-seed stability claim.}
+\label{tab:scaec-recipe}
+\centering
+\small
+\begin{tabular}{p{0.23\columnwidth}p{0.60\columnwidth}}
+\hline
+Item & Recipe detail \\
+\hline
+Data & 9025 train / 475 validation / 500 clean test / 152 low-SER test examples \\
+Sample rate and target & 16 kHz, clean near-end speech target \\
+Seed and scope & seed 7; single fixed-seed artifact study \\
+Optimizer & AdamW, LR $3\times 10^{-4}$, weight decay $10^{-5}$, gradient clip 5.0 \\
+Batch / accumulation & batch 128; gradient accumulation not recorded in artifact metadata \\
+Training length & reported artifact completed 4 epochs / 284 optimizer steps; selected epoch 4 \\
+Selection rule & best validation SI-SDR under the same streaming contract \\
+Loss weights & $0.5L_{wav}+1.0L_{cpx}+0.5L_{mag}+0.25L_{sdw}+0.35L_{lin}+0.25L_{res}+0.05L_{cons}+0.05L_{noise}$ \\
+\hline
+\end{tabular}
+\end{table}

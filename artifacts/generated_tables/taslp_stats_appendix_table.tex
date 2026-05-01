@@ -1,0 +1,28 @@
+\begin{table*}[t]
+\caption{Statistical reporting summary. All p-values come from paired two-sided sign tests on matched examples; 95\% confidence intervals are bootstrap intervals over the paired mean improvement; Holm correction is applied within each result family.}
+\label{tab:stats-summary}
+\centering
+\scriptsize
+\begin{tabular}{p{0.12\textwidth}p{0.07\textwidth}p{0.28\textwidth}p{0.10\textwidth}rll}
+\hline
+Evidence role & Family & Comparison & Metric & Mean effect & 95\% CI & Holm-corrected $p$ \\
+\hline
+paper-level & Clean & SC-AEC-Echo vs ASTWS-H16k & SI-SDR (dB) & -4.16 & [-4.35, -3.97] & 6.73e-109 \\
+paper-level & Noisy & SC-AEC-Echo vs ASTWS-H16k & SI-SDR (dB) & -2.14 & [-2.36, -1.92] & 7.41e-48 \\
+paper-level & Low-SER & SC-AEC-Echo vs ASTWS-H16k & SI-SDR (dB) & -4.47 & [-4.78, -4.16] & 2.05e-40 \\
+paper-level & Blind & SC-AEC-Echo vs ASTWS-H16k & AECMOS-Echo & 0.50 & [0.45, 0.55] & 3.70e-68 \\
+paper-level & Blind & SC-AEC-Echo vs ASTWS-H16k & AECMOS-Other & -0.17 & [-0.21, -0.13] & 4.80e-28 \\
+family ablation & Low-SER & SC-AEC-Echo vs SC-AEC-NoCond & DT suppression (dB) & 1.95 & [1.62, 2.29] & 4.33e-19 \\
+family ablation & Low-SER & SC-AEC-Echo vs SC-AEC-NoCond & DT preservation & 0.01 & [0.01, 0.02] & 3.97e-21 \\
+family ablation & Low-SER & SC-AEC-Echo vs SC-AEC-NoCond & SI-SDR (dB) & 9.93 & [9.42, 10.44] & 1.61e-43 \\
+classical diagnostic & Blind & SC-AEC-Echo vs NLMS & AECMOS-Echo & 1.07 & [0.98, 1.15] & 3.93e-82 \\
+classical diagnostic & Blind & SC-AEC-Echo vs NLMS & AECMOS-Other & -0.52 & [-0.58, -0.47] & 1.24e-63 \\
+transfer audit & Clean & SC-AEC-Echo vs Deep Echo transfer & SI-SDR (dB) & 5.72 & [5.30, 6.12] & 9.46e-71 \\
+transfer audit & Noisy & SC-AEC-Echo vs Deep Echo transfer & SI-SDR (dB) & 6.34 & [5.96, 6.70] & 1.03e-119 \\
+transfer audit & Blind & SC-AEC-Echo vs ASTWS transfer & AECMOS-Echo & 1.65 & [1.58, 1.72] & 4.00e-139 \\
+transfer audit & Blind & SC-AEC-Echo vs ASTWS transfer & AECMOS-Other & -0.90 & [-0.98, -0.81] & 1.70e-128 \\
+transfer audit & Blind & SC-AEC-Echo vs Deep Echo transfer & AECMOS-Echo & 0.78 & [0.72, 0.84] & 1.38e-92 \\
+transfer audit & Blind & SC-AEC-Echo vs Deep Echo transfer & AECMOS-Other & -0.48 & [-0.55, -0.41] & 2.04e-55 \\
+\hline
+\end{tabular}
+\end{table*}

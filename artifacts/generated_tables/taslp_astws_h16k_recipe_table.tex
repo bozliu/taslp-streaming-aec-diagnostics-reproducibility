@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\caption{ASTWS-H16k retraining recipe and comparison boundary. Additional training safeguards were used only to make the public ASTWS architecture retrain finite under the harmonized 16 kHz recipe; they are reported as baseline recipe details.}
+\label{tab:astws-recipe}
+\centering
+\small
+\begin{tabular}{p{0.15\textwidth}p{0.36\textwidth}p{0.36\textwidth}}
+\hline
+Item & SC-AEC-Echo & ASTWS-H16k \\
+\hline
+Architecture & SC-AEC residual suppressor & Public ASTWS architecture \\
+Train/validation data & Harmonized 16 kHz public train/val slices & Same harmonized 16 kHz train/val slices \\
+Target & Clean near-end speech & Clean near-end speech \\
+Optimizer & AdamW, LR $3\times10^{-4}$ & AdamW, LR 1e-4 \\
+Training scale & seed 7, fixed single-seed artifact study & single retraining run \\
+Batch / accumulation & batch-first waveform training & batch 1, accum. 8 \\
+Loss & waveform, complex, magnitude, SDW, linear/residual consistency & SI-SDR, waveform L1, STFT mag/RI (0.25/0.5/1.0/0.25) \\
+Training safeguards & none beyond family objective & warmup 500, grad clip 1.0, nonfinite skip rate 0.0006 \\
+Selection & validation SI-SDR under streaming contract & validation SI-SDR, best epoch 6 \\
+Fingerprint & reported in artifact metadata & sha256 57e00339b211... \\
+\hline
+\end{tabular}
+\end{table*}

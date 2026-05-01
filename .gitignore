@@ -1,0 +1,32 @@
+.DS_Store
+__pycache__/
+*.pyc
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# Raw or generated audio is intentionally not part of this release.
+*.wav
+*.flac
+*.mp3
+*.m4a
+*.ogg
+
+# Model checkpoints are intentionally not part of this release.
+*.pt
+*.pth
+*.ckpt
+*.onnx
+*.tflite
+
+# Local build products.
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.log
+*.out
+*.synctex.gz

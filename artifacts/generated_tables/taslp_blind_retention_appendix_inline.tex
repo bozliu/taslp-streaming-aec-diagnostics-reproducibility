@@ -1,0 +1,23 @@
+\par\noindent
+\refstepcounter{table}
+\label{tab:blind-retention}
+\begin{center}
+\textbf{TABLE \thetable}\\
+\parbox{0.96\linewidth}{\centering Blind double-talk retention summary on the 82 shared clips exported by all compared systems. Clip RMS ratio measures whole-clip energy retention, while the microphone-active columns show how often frames selected by microphone-RMS activity are driven below small fractions of the microphone-frame RMS.}\\[0.5ex]
+\scriptsize
+\begin{tabular}{lrrr}
+\hline
+System & Clip RMS & Mic-active $<0.1$ & Mic-active $<0.01$ \\
+\hline
+SC-AEC-Echo & 0.62 & 0.55 & 0.45 \\
+ASTWS-H16k & 0.85 & 0.36 & 0.13 \\
+ASTWS transfer & 0.96 & 0.12 & 0.01 \\
+Deep Echo transfer & 0.77 & 0.16 & 0.01 \\
+NLMS & 1.20 & 0.01 & 0.00 \\
+Mic pass & 1.00 & 0.00 & 0.00 \\
+Far-end pass & 1.00 & 0.45 & 0.34 \\
+All-zero & 0.00 & 1.00 & 1.00 \\
+\hline
+\end{tabular}
+\end{center}
+\par\medskip

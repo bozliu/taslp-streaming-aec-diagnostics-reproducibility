@@ -1,0 +1,22 @@
+{
+  "accepted_rating_rows": 432,
+  "canonical_rater_id": "returned_human_item_summary_v1",
+  "decode_csv": "runs/taslp_major_revision/human_astws_h16k_package_volunteers/admin_decode.csv",
+  "degenerate_trap_rows": 6,
+  "hidden_repeat_rows": 12,
+  "missing_decode_clip_ids": [],
+  "missing_decode_count": 0,
+  "ratings_csv": "runs/taslp_major_revision/proxy_machine_astws_h16k_volunteers/returned_machine_proxy.csv",
+  "returned_rows": 450,
+  "source_rater_ids_preserved_for_provenance": [
+    "machine_proxy_objective_astws_h16k_v1"
+  ],
+  "systems": {
+    "ASTWS public checkpoint transfer": 72,
+    "ASTWS-H16k": 72,
+    "Deep Echo public checkpoint transfer": 72,
+    "NLMS": 72,
+    "SC-AEC-Echo": 72,
+    "SC-AEC-Preserve": 72
+  }
+}
